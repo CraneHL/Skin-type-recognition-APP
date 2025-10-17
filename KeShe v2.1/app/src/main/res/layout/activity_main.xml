@@ -6,8 +6,42 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@drawable/bg_dream_gradient"
     tools:context=".MainActivity">
+
+    <!-- 星点装饰（可移动/复制调整位置） -->
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/twinkle"
+        android:alpha="0.85"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"/>
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/twinkle"
+        android:alpha="0.65"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="48dp"/>
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/twinkle"
+        android:alpha="0.6"
+        app:layout_constraintBottom_toTopOf="@id/ivLogo"
+        app:layout_constraintEnd_toStartOf="@id/ivLogo"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp" />
 
     <!-- Logo：占满“父布局顶部 ↔︎ tv1 顶部”区域，内容居中自适应 -->
     <ImageView
@@ -23,7 +57,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- 文案：在“父布局顶部 ↔︎ 按钮上边缘(Barrier)”之间垂直居中，水平居中 -->
+    <!-- 文案：在“父布局顶部 ↔︎ 按钮上边缘(Barrier)”之间垂直居中 -->
     <TextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
@@ -43,8 +77,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="拍照"
+
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#83CFF6"
+
         android:layout_marginStart="24dp"
         android:layout_marginEnd="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
         app:layout_constraintTop_toBottomOf="@id/tv1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,8 +97,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="选取图片"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#83CFF6"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
         app:layout_constraintTop_toBottomOf="@id/tv1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn1"
@@ -68,7 +114,7 @@
         android:id="@+id/btnsTopBarrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="top"
+        app:barrierDirection="bottom"
         app:constraint_referenced_ids="btn1,btn2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

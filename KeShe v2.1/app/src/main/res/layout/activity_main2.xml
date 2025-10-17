@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@drawable/bg_dream_gradient"
     tools:context=".MainActivity2">
 
     <!-- 方案使用固定高度比例 -->
@@ -16,7 +16,7 @@
         android:layout_height="0dp"
         android:contentDescription="皮肤图片"
         android:scaleType="centerInside"
-        android:background="#EEEEEE"
+        android:background="@drawable/bg_dream_gradient"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -46,11 +46,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="（这里显示判断报告 — 暂为占位文字）"
+                android:textColor="@color/black"
                 android:padding="12dp"
                 android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tvRecommendation"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
@@ -65,6 +67,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="生成并保存图片"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#83CFF6"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
@@ -77,6 +81,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="返回上一级"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#83CFF6"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"

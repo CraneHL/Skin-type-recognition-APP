@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+        <color name="dream_deep">#4C5E91</color>
+        <color name="dream_mid">#6F86B6</color>
+        <color name="dream_light">#8A9DC6</color>
+        <color name="dream_btn">#6E81C9</color>
+        <color name="dream_text">#F7F9FF</color>
+
+
+</resources>

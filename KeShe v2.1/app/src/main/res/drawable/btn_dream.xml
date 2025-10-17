@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ripple wrapper for API21+ -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#66FFFFFF"> <!-- 轻微白色按下效果 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#6E81C9" /> <!-- 按钮主色：柔和紫蓝 -->
+            <corners android:radius="14dp" />
+            <padding android:left="12dp" android:top="10dp" android:right="12dp" android:bottom="10dp" />
+        </shape>
+    </item>
+</ripple>
